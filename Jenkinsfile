@@ -21,7 +21,7 @@ pipeline {
                 sh 'sudo apt update'
                 sh 'sudo apt install apache2 -y'
                 sh 'sudo systemctl status apache2'
-                sh 'sudo systemctl restart apache2'
+                sh 'sudo systemctl start apache2'
             }
         }
     }
